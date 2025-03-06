@@ -1,0 +1,13 @@
+src/
+tests/
+coverage/
+.git/
+.github/
+.gitignore
+.npmignore
+jest.config.js
+tsconfig.json
+*.test.ts
+*.spec.ts
+__tests__/
+node_modules/

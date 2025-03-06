@@ -1,0 +1,73 @@
+# Configuration for GitHub repository
+
+# Repository settings
+repository:
+  # A short description of the repository that appears on GitHub
+  description: A lightweight, isomorphic data validation library for TypeScript/JavaScript. Created by Alok Kaushik.
+  
+  # Topics to help others discover your repository
+  topics:
+    - typescript
+    - validation
+    - form-validation
+    - schema-validation
+    - isomorphic
+    - javascript
+    - react
+    - express
+    - vue
+    - nextjs
+    - nodejs
+    - frontend
+    - backend
+    - data-validation
+    - type-safety
+
+# Labels for Issues and Pull Requests
+labels:
+  - name: bug
+    color: d73a4a
+    description: Something isn't working
+  - name: documentation
+    color: 0075ca
+    description: Improvements or additions to documentation
+  - name: enhancement
+    color: a2eeef
+    description: New feature or request
+  - name: good first issue
+    color: 7057ff
+    description: Good for newcomers
+  - name: help wanted
+    color: 008672
+    description: Extra attention is needed
+  - name: question
+    color: d876e3
+    description: Further information is requested
+
+# Welcome message for new contributors
+welcome:
+  message: |
+    Thanks for your contribution to IsoValid! 👋
+    
+    We're excited to have you here. Please make sure to read our [Contributing Guidelines](CONTRIBUTING.md) before making changes.
+    
+    If you need any help, feel free to:
+    - Check our [documentation](wiki/)
+    - Ask questions in [Discussions](../../discussions)
+    - Contact maintainer [@alok5953](https://github.com/alok5953)
+
+# Probot settings
+# Configure how GitHub's bots interact with your repository
+probot:
+  # Automatically add labels to PRs based on branch names and files changed
+  auto-label:
+    rules:
+      - label: documentation
+        files:
+          - '*.md'
+          - 'docs/**/*'
+          - 'wiki/**/*'
+      - label: bug
+        branch: 'fix/*'
+      - label: enhancement
+        branch: 'feature/*'

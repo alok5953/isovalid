@@ -1,0 +1,37 @@
+{
+  "name": "@alok5953/isovalid",
+  "version": "1.0.0",
+  "description": "Isomorphic data validation library for TypeScript/JavaScript",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "prepublish": "npm run build"
+  },
+  "keywords": [
+    "validation",
+    "schema",
+    "typescript",
+    "isomorphic",
+    "form-validation"
+  ],
+  "author": "Alok Kaushik <alok5953@gmail.com> (https://github.com/alok5953)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alok5953/isovalid.git"
+  },
+  "bugs": {
+    "url": "https://github.com/alok5953/isovalid/issues"
+  },
+  "homepage": "https://github.com/alok5953/isovalid#readme",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.13.9",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.6",
+    "typescript": "^5.8.2"
+  }
+}
