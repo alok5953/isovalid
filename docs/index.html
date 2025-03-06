@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IsoValid - Isomorphic Data Validation Library</title>
+    <meta name="description" content="A lightweight, isomorphic data validation library for TypeScript/JavaScript">
+    <meta name="keywords" content="typescript, validation, form validation, schema validation, isomorphic, javascript, react, express, vue, nextjs">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <style>
+        :root {
+            --primary: #7c3aed;
+            --primary-hover: #6d28d9;
+        }
+        .container {
+            padding: 2rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+        }
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+        .feature-card {
+            padding: 1.5rem;
+            border-radius: 8px;
+            background: var(--card-background-color);
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <section class="hero">
+            <h1>IsoValid</h1>
+            <p>A lightweight, isomorphic data validation library for TypeScript/JavaScript</p>
+            <div>
+                <a href="https://github.com/alok5953/isovalid" role="button">GitHub</a>
+                <a href="Getting-Started.html" role="button" class="secondary">Get Started</a>
+            </div>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>🎯 TypeScript-First</h3>
+                <p>Built with TypeScript for excellent type inference and IDE support.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🔄 Isomorphic</h3>
+                <p>Use the same validation logic on both client and server.</p>
+            </div>
+            <div class="feature-card">
+                <h3>🎨 Fluent API</h3>
+                <p>Chainable, intuitive API for defining validation rules.</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Quick Example</h2>
+            <pre><code>import { v } from '@alok5953/isovalid';
+
+const userSchema = {
+  username: v.string()
+    .min(3)
+    .max(20)
+    .matches(/^[a-zA-Z0-9_]+$/),
+  email: v.string()
+    .email()
+    .trimmed(),
+  age: v.number()
+    .min(18)
+    .integer()
+};
+
+const result = userSchema.username.validate('john_doe');
+console.log(result.valid); // true</code></pre>
+        </section>
+
+        <section>
+            <h2>Documentation</h2>
+            <ul>
+                <li><a href="Getting-Started.html">Getting Started Guide</a></li>
+                <li><a href="API-Reference.html">API Reference</a></li>
+                <li><a href="Framework-Integration.html">Framework Integration</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>

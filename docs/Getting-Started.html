@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getting Started - IsoValid</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism.min.css">
+    <style>
+        .container { padding: 2rem; max-width: 800px; margin: 0 auto; }
+        pre { background: #f6f8fa; padding: 1rem; border-radius: 6px; }
+        code { font-family: 'Fira Code', monospace; }
+    </style>
+</head>
+<body>
+    <nav class="container">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="API-Reference.html">API Reference</a></li>
+            <li><a href="Framework-Integration.html">Framework Integration</a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <h1>Getting Started with IsoValid</h1>
+        
+        <h2>Installation</h2>
+        <pre><code class="language-bash">npm install @alok5953/isovalid</code></pre>
+        
+        <h2>Basic Usage</h2>
+        <pre><code class="language-typescript">import { v } from '@alok5953/isovalid';
+
+// Define your schema
+const userSchema = {
+  username: v.string()
+    .min(3)
+    .max(20)
+    .matches(/^[a-zA-Z0-9_]+$/),
+  email: v.string()
+    .email()
+    .trimmed(),
+  age: v.number()
+    .min(18)
+    .integer()
+};
+
+// Validate some data
+const result = userSchema.username.validate('john_doe');
+console.log(result.valid); // true
+
+// Handle validation errors
+const emailResult = userSchema.email.validate('invalid-email');
+if (!emailResult.valid) {
+  console.log(emailResult.errors[0].message);
+  // Output: "Invalid email format"
+}</code></pre>
+
+        <h2>String Validation</h2>
+        <pre><code class="language-typescript">const stringSchema = v.string()
+  .min(3) // minimum length
+  .max(20) // maximum length
+  .matches(/^[A-Z]/) // must start with uppercase
+  .email() // must be valid email (can't be combined with matches)
+  .trimmed(); // trims whitespace before validation</code></pre>
+
+        <h2>Number Validation</h2>
+        <pre><code class="language-typescript">const numberSchema = v.number()
+  .min(0) // minimum value
+  .max(100) // maximum value
+  .integer() // must be an integer
+  .positive(); // must be positive</code></pre>
+
+        <h2>Custom Validation</h2>
+        <pre><code class="language-typescript">const passwordSchema = v.string()
+  .min(8)
+  .custom((value) => {
+    if (!/[A-Z]/.test(value)) {
+      return 'Password must contain at least one uppercase letter';
+    }
+    if (!/[a-z]/.test(value)) {
+      return 'Password must contain at least one lowercase letter';
+    }
+    if (!/[0-9]/.test(value)) {
+      return 'Password must contain at least one number';
+    }
+    return null; // validation passed
+  });</code></pre>
+
+        <h2>Next Steps</h2>
+        <ul>
+            <li>Check out the <a href="API-Reference.html">API Reference</a> for detailed documentation</li>
+            <li>See <a href="Framework-Integration.html">Framework Integration</a> for framework-specific examples</li>
+            <li>Visit our <a href="https://github.com/alok5953/isovalid">GitHub repository</a> to contribute or report issues</li>
+        </ul>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-typescript.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+</body>
+</html>
