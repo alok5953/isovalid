@@ -7,7 +7,7 @@
 
 A lightweight, isomorphic data validation library for TypeScript and JavaScript that works seamlessly in both browser and Node.js environments. IsoValid is designed to provide a unified validation experience across your entire application stack.
 
-> Created and maintained by [Alok Kaushik](https://github.com/alok5953) | [alok5953@gmail.com](mailto:alok5953@gmail.com)
+> Created and maintained by [Alok Kaushik](https://github.com/alok5953) | [alokkaushik5953@gmail.com](mailto:alokkaushik5953@gmail.com)
 
 ## Why IsoValid?
 

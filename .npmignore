@@ -1,16 +1,23 @@
-src/
+# Source and test files
+src/**/*.ts
 tests/
 coverage/
+__tests__/
+*.test.ts
+*.spec.ts
+
+# Config files
 .git/
 .github/
 .gitignore
 .npmignore
 jest.config.js
 tsconfig.json
-*.test.ts
-*.spec.ts
-__tests__/
-node_modules/
+
+# Documentation and examples
 docs/
 examples/
 CONTRIBUTING.md
+
+# Dependencies
+node_modules/

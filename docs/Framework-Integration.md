@@ -364,7 +364,7 @@ async create(@Body(new ValidationPipe({
 - Check our [Examples](Examples) for more patterns
 - Read the [API Reference](API-Reference)
 - [Report issues](https://github.com/alok5953/isovalid/issues)
-- Contact [Alok Kaushik](mailto:alok5953@gmail.com) for support
+- Contact [Alok Kaushik](mailto:alokkaushik5953@gmail.com) for support
 
 ## Contributing
 

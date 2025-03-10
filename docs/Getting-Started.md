@@ -153,4 +153,4 @@ const passwordSchema = v.string()
 
 - [Report a bug](https://github.com/alok5953/isovalid/issues/new?template=bug_report.md)
 - [Request a feature](https://github.com/alok5953/isovalid/issues/new?template=feature_request.md)
-- Contact [Alok Kaushik](mailto:alok5953@gmail.com) for support
+- Contact [Alok Kaushik](mailto:alokkaushik5953@gmail.com) for support

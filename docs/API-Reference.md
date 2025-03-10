@@ -210,4 +210,4 @@ type User = {
 - Check our [Examples](Examples) for more usage patterns
 - Read the [Getting Started](Getting-Started) guide
 - [Report issues](https://github.com/alok5953/isovalid/issues)
-- Contact [Alok Kaushik](mailto:alok5953@gmail.com) for support
+- Contact [Alok Kaushik](mailto:alokkaushik5953@gmail.com) for support

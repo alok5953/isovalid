@@ -1,6 +1,6 @@
 {
   "name": "isovalid",
-  "version": "1.0.1",
+  "version": "1.0.4",
   "description": "Isomorphic data validation library for TypeScript/JavaScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -17,7 +17,7 @@
     "isomorphic",
     "form-validation"
   ],
-  "author": "Alok Kaushik <alok5953@gmail.com> (https://github.com/alok5953)",
+  "author": "Alok Kaushik <alokkaushik5953@gmail.com> (https://github.com/alok5953)",
   "license": "MIT",
   "repository": {
     "type": "git",

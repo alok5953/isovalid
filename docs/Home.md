@@ -38,7 +38,7 @@ IsoValid is a TypeScript-first validation library that works seamlessly across y
 
 ## Contact
 
-- Email: [alok5953@gmail.com](mailto:alok5953@gmail.com)
+- Email: [alokkaushik5953@gmail.com](mailto:alokkaushik5953@gmail.com)
 - GitHub: [@alok5953](https://github.com/alok5953)
 
 ## License
