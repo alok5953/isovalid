@@ -1,6 +1,6 @@
 {
   "name": "isovalid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Isomorphic data validation library for TypeScript/JavaScript",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

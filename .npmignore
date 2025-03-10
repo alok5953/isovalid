@@ -11,3 +11,6 @@ tsconfig.json
 *.spec.ts
 __tests__/
 node_modules/
+docs/
+examples/
+CONTRIBUTING.md
